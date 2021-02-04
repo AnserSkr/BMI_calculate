@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
         }else {
             textResult.setText("BMI:"+bmi.toString()+"体型 非常肥胖");
         }
-
+        //test
     }
 
 
