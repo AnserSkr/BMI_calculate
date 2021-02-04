@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
            非常肥胖,高于32
             */
 
-        Double bmi = weight/(height*2);
+        Double bmi = weight/(height*height);
         if(bmi<18.5){
             textResult.setText("BMI:"+bmi.toString()+"体型 过轻");
         }else if (bmi<23.9){
