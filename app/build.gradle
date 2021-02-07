@@ -10,8 +10,8 @@ android {
         applicationId "com.bmi"
         minSdkVersion 16
         targetSdkVersion 30
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "2.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -26,7 +26,25 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-}
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            //def date = new Date().format("yyyyMMdd" , TimeZone.getTimeZone("Asia/Shanghai"))
+            def date = new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("GMT+08"))
+            //只处理生产版本
+            if (variant.buildType.name.equals('debug')) {
+                // app包名称
+               // outputFileName = "debug_${date}_${versionName}.apk"
+                outputFileName = "debug_${versionName}.apk"
+            }
+            if (variant.buildType.name.equals('release')) {
+                //outputFileName = "release_${date}_${versionName}.apk"
+                outputFileName = "release_${versionName}.apk"
+            }
+        }
+    }
+
+    }
 
 dependencies {
 
