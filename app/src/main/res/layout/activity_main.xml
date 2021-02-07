@@ -34,75 +34,40 @@
         android:inputType="numberDecimal"
         android:autofillHints="username"/>
 
-    <RadioGroup
-        android:id="@+id/Rag1"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:orientation="horizontal">
 
-        <RadioButton
-            android:id="@+id/radioButWHO"
+        <CheckBox
+            android:id="@+id/cbWHO"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="@string/radiobtnWHO" />
 
-        <RadioButton
-            android:id="@+id/radioButAric"
+        <CheckBox
+            android:id="@+id/cbAria"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="@string/radiobtnArea" />
 
-        <RadioButton
-            android:id="@+id/radioButChina"
+        <CheckBox
+            android:id="@+id/cbChina"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="@string/radiobtnChina" />
-
-    </RadioGroup>
-
-    <RadioGroup
-        android:id="@+id/Rag2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <RadioButton
-            android:id="@+id/raBtnBmi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/LBDisplayBmi" />
-
-        <RadioButton
-            android:id="@+id/raBtnResult"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/lbDisplayResult" />
-
-        <RadioButton
-            android:id="@+id/raBtnBoth"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/lbDidplayBoth" />
-    </RadioGroup>
+    </LinearLayout>
 
     <TextView
         android:id="@+id/textResult"
         android:layout_width="match_parent"
-        android:layout_height="31dp"
+        android:layout_height="wrap_content"
         android:background="#03A9F4"
         android:gravity="center"
         android:hint="@string/testResult"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/textResult2"
-        android:layout_width="match_parent"
-        android:layout_height="31dp"
-        android:background="#03A9F4"
-        android:gravity="center"
-        android:hint="@string/textrisk"
         android:textSize="18sp" />
 
     <Button
