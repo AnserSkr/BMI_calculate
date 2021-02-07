@@ -34,11 +34,76 @@
         android:inputType="numberDecimal"
         android:autofillHints="username"/>
 
+    <RadioGroup
+        android:id="@+id/Rag1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButWHO"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/radiobtnWHO" />
+
+        <RadioButton
+            android:id="@+id/radioButAric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radiobtnArea" />
+
+        <RadioButton
+            android:id="@+id/radioButChina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radiobtnChina" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/Rag2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/raBtnBmi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/LBDisplayBmi" />
+
+        <RadioButton
+            android:id="@+id/raBtnResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbDisplayResult" />
+
+        <RadioButton
+            android:id="@+id/raBtnBoth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbDidplayBoth" />
+    </RadioGroup>
+
     <TextView
         android:id="@+id/textResult"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/testResult" />
+        android:layout_height="31dp"
+        android:background="#03A9F4"
+        android:gravity="center"
+        android:hint="@string/testResult"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textResult2"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:background="#03A9F4"
+        android:gravity="center"
+        android:hint="@string/textrisk"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/btnBimCalc"
@@ -96,4 +161,12 @@
         android:layout_height="31dp"
         android:gravity="center"
         android:text="@string/textscop7" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:gravity="center"
+        android:text="@string/textscop8" />
+
 </LinearLayout>

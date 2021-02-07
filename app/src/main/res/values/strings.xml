@@ -3,13 +3,22 @@
     <string name="appTitle">BMI 计算器</string>
     <string name="editHeight">身高值（m）</string>
     <string name="editWeight">体重（Kg）</string>
-    <string name="testResult">结论</string>
+    <string name="testResult">结论：</string>
     <string name="btnmass">计算</string>
     <string name="textscop1">软件计算说明</string>
     <string name="textscop2">最理想的体重指数是22，BMI指数为18.5~23.9时属正常，具体分类如下︰</string>
-    <string name="textscop3"> 过轻:低于18.5</string>
-    <string name="textscop4"> 正常∶18.5-23.9</string>
-    <string name="textscop5"> 过重:24-27</string>
-    <string name="textscop6">肥胖:28-32</string>
-    <string name="textscop7">非常肥胖,高于32</string>
+    <string name="textscop3">偏瘦：低于18.5</string>
+    <string name="textscop4">正常：WHO:18.5-24.9  亚洲:18.5-22.9  中国:18.5-23.9</string>
+    <string name="textscop5">偏胖：WHO:25-29.9  亚洲:23-24.9  中国:24-27.9</string>
+    <string name="textscop6">肥胖：WHO:30-34.9  亚洲: >30  中国: >28</string>
+    <string name="textscop7">重度肥胖：WHO:35-39.9  亚洲: >30  中国: --</string>
+    <string name="textscop8">极度重度肥胖： >40</string>
+    <string name="radiobtnWHO">   WHO标准   </string>
+    <string name="radiobtnArea">   亚洲标准   </string>
+    <string name="radiobtnChina">   中国标准   </string>
+    <string name="textrisk">相关疾病发病风险：</string>
+    <string name="LBDisplayBmi">显示BMI</string>
+    <string name="lbDisplayResult">显示体型结论</string>
+    <string name="lbDidplayBoth">两者都显示</string>
+
 </resources>
